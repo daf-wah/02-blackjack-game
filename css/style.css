@@ -1,29 +1,31 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-}
-
-img {
-    width: 200px;
-    display: block;
-}
-p {
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-button {
-    background: white;
-    color: black;
-    margin-top: 10px;
-    border: 1px solid black;
-    padding: 10px 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/02-blackjack-game/img/table.png);
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
     font-weight: bold;
-    cursor: pointer;
-    border-radius: 20px;
 }
 
-#error {
-    color: red;
-    font-weight: 200;
+h1 {
+    color: goldenrod;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    padding: 1rem 2rem;
 }
