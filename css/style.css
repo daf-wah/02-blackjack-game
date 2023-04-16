@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(/02-blackjack-game/img/table.png);
+    background-image: url(/img/blackjack.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     color: whitesmoke;
     font-weight: bold;
@@ -16,16 +17,38 @@ body {
 h1 {
     color: goldenrod;
     padding: 1rem;
+    font-size: 3rem;
 }
 
 p {
-    padding: 1rem;
+    padding: .5em;
+    font-size: 1.25rem;
 }
 
 #message-el {
     font-style: italic;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
 button {
+    max-width: 300px;
+    background-color: goldenrod;
+    color: #016f32;
+    font-weight: bold;
+    border-radius: .5rem;
+    font-size: 1.5rem;
     padding: 1rem 2rem;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 75%;
 }
